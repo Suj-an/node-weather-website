@@ -1,5 +1,5 @@
 const getData = address => {
-  return fetch(`http://localhost:3000/weather?address=${address}`)
+  return fetch(`/weather?address=${address}`)
     .then(response => {
       if (response.status === 200) {
         return response.json();
